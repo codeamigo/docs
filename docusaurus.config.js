@@ -71,7 +71,7 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
-            'https://github.com/codeamigo/docs/tree/master/docs',
+            'https://github.com/codeamigo/docs/tree/master',
         },
         // blog: {
         //   showReadingTime: true,
