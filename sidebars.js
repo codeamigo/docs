@@ -4,6 +4,7 @@ module.exports = {
       type: 'category',
       label: 'Docusaurus Tutorial',
       items: [
+        'writing-tests',
         'getting-started',
         'create-a-page',
         'create-a-document',
