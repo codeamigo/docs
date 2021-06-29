@@ -5,19 +5,46 @@ title: Writing Tests
 ## React
 Be sure to add `@testing-library/react: 12.0.0` to package.json
 
-### Helpful snippets
+### Check that the textContent is correct
 
-Render a component and check that the textContent is correct
-```
+```jsx
 import { render } from '@testing-library/react'
-
 import { MyComponent } from './MyComponent'
 
 describe('MyComponent', () => {
-    it('does something', () => {
+    it('displays the correct text content.', () => {
         const { getByRole } = render(<MyComponent prop='' />)
         const role = getByRole('role')
-        expect(role.textConten).toBe('All work and no play makes Jack a dull boy.')
+        expect(role.textContent).toBe('All work and no play makes Jack a dull boy.')
+    })
+})
+```
+
+### Check that a prop is passed and rendered
+
+```jsx
+import { render } from '@testing-library/react'
+import { Square } from './Game'
+
+describe('Square', () => {
+    it('renders a value', async () => {
+        const { findByText } = render(<Square value={1} />)
+        const myValue = await findByText(1)
+        expect(myValue.textContent).toBe(1)
+    })
+})
+```
+
+### Check the state of a component
+
+```jsx
+import { Square } from './Game'
+
+describe('Square', () => {
+    it('has the correct state', () => {
+        const mySquare = new Square()
+        expect(Object.keys(mySquare.state)).toContain('value')
+        expect(mySquare.state.value).toBe(null)
     })
 })
 ```
