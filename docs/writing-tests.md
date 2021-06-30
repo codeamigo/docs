@@ -62,3 +62,19 @@ describe('Board', () => {
     })
 })
 ```
+
+### fireEvent example
+
+```jsx
+import { render, fireEvent } from '@testing-library/react'
+import { Board } from './Game'
+
+describe('Board, handleClick', () => {
+	it('updates xIsNext boolean', () => {
+		const { container, getByText } = render(<Board />)
+		const boardRow = container.querySelector('.board-row')
+		fireEvent.click(boardRow.firstChild)
+		expect(getByText('X')).toBeDefined()
+	})
+})
+```
