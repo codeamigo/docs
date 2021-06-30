@@ -48,3 +48,17 @@ describe('Square', () => {
     })
 })
 ```
+
+### Check the value of a class function
+
+```jsx
+import { Board } from './Game'
+
+describe('Board', () => {
+    it('has the correct state', () => {
+        const myBoard = new Board()
+        const renderSquareString = myBoard.renderSquare.toString()
+        expect(renderSquareString).toContain(`value: this.state.squares[i]`)
+    })
+})
+```
