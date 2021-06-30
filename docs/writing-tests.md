@@ -30,7 +30,7 @@ describe('Square', () => {
     it('renders a value', async () => {
         const { findByText } = render(<Square value={1} />)
         const myValue = await findByText(1)
-        expect(myValue.textContent).toBe(1)
+        expect(myValue.textContent).toBe("1")
     })
 })
 ```
