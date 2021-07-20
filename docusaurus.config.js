@@ -14,11 +14,11 @@ module.exports = {
       title: 'codeamigo',
       logo: {
         alt: 'codeamigo Logo',
-        src: 'img/logo.svg',
+        src: 'img/logo.png',
       },
       items: [
         {
-          to: 'docs/',
+          to: 'docs/writing-tests/react',
           activeBasePath: 'docs',
           label: 'Docs',
           position: 'left',
@@ -38,8 +38,8 @@ module.exports = {
           title: 'Docs',
           items: [
             {
-              label: 'Getting Started',
-              to: 'docs/',
+              label: 'Writing Tests',
+              to: 'docs/writing-tests/react',
             },
           ],
         },
@@ -47,21 +47,17 @@ module.exports = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
               label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              href: 'https://twitter.com/codeamigo_dev',
             },
+            {
+              label: 'GitHub',
+              href: 'https://github.com/codeamigo'
+            }
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} codeamigo LLC, Built with Docusaurus.`,
     },
   },
   presets: [
