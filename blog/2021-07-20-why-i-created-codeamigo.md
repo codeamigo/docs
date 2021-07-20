@@ -8,17 +8,19 @@ author_image_url: https://avatars.githubusercontent.com/u/5640772?v=4
 tags: [codeamigo, about, education]
 ---
 
-I've applied to work at [Codecademy](https://www.codecademy.com/) three times, once in 2014, again in 2015, and most recently in 2020. I've been rejected all three times. A few weeks after the most recent rejection I decided to build my own version of Codecademy. I was living in Spain so I thought codeamigo would be a good name. Here's why I created [codeamigo.dev](https://codeamigo.dev) and what I've learned so far.
+I've applied to work at [Codecademy](https://www.codecademy.com/) three times, once in 2014, again in 2015, and most recently in 2020. I've been rejected all three times. I wanted to prove to myself I was capable of building something like it, so I decided to build my own version. I was living in Spain so I thought [codeamigo.dev](https://codeamigo.dev) would be a good name. Here's why I created it and what I've learned so far.
+
+## Why
 
 I love the interactive learning experience of Codecademy. Of all the mediums I've used to learn how to code, YouTube, blog posts, tutorials, etc., Codecademy always stood out. I loved feeling a sense of accomplishment after finishing a step or lesson, or reaching my streak goal for the week. When I was first learning to code, I visited Codecademy everyday. I wouldn't be a developer without it.
 
-What _bothered_ me about the platform was that I didn't know my teachers. I wanted to connect with members of my community and learn from them, instead of just digesting information from a black box. Watching [MKBHD](https://www.youtube.com/user/marquesbrownlee) on YouTube made this clear. I don't watch everyone of his videos because I'm interested in each and every piece of tech, I'm interested in him, and how he presents his material.
+What _bothered_ me about the platform was that I didn't know or connect with my teachers. I wanted to connect with members of my community and learn from them, instead of just digesting information from a black box. Watching [MKBHD](https://www.youtube.com/user/marquesbrownlee) on YouTube made this clear. I don't watch everyone of his videos because I'm interested in each piece of tech he reviews, I'm interested in him, and how he presents the material.
 
-I thought if I could bring that concept to coding lessons and tutorials people would be able to learn from and follow peers they liked learning from. Building the platform was a lot of fun and quite challenging.
+I thought if I could bring that concept to coding lessons and tutorials people would be able to learn from and follow peers whose material they enjoyed. Building the platform was a lot of fun and quite challenging.
 
 ## Compiling Code on The Fly
 
-Without a doubt the most challenging aspect of building codeamigo.dev was the code compilation. There are not a ton of examples of it in the wild. In fact, [Amjad Masad](https://twitter.com/amasad), who built repl.it, also wrote the code for Codecademy. Anyway, I decided to start with just languages the browser can understand natively, so HTML, CSS, and JS. [Ives Van Hoorne](https://twitter.com/compuives) and the [codesandbox](https://codesandbox.io) team were a great inspiration.
+Without a doubt the most challenging aspect of building codeamigo.dev was the code compilation. There are not a ton of examples out in the wild. In fact, [Amjad Masad](https://twitter.com/amasad), who built repl.it, also wrote the original code for Codecademy. Anyway, I decided to start with just languages the browser can understand natively, so HTML, CSS, and JS. [Ives Van Hoorne](https://twitter.com/compuives) and the [codesandbox](https://codesandbox.io) team were a great inspiration.
 
 ### Attempt 1: babel-standalone
 
@@ -48,7 +50,10 @@ codeamigo.dev's backend uses NodeJS to serve an Apollo Server GraphQL API. Every
 
 The frontend is a NextJS app using apollo-client to manage state and tailwindcss for styling. 
 
-### How It Works
+## How It Works
 
-codeamigo.dev provides you with a platform to create Codecademy style lessons. Each lesson is made up of Steps, and each Step is made up of Checkpoints. A Step can have many or no Checkpoints. Each Checkpoint points to a test you must write that a user must pass. You can read more about testing [here](https://docs.codeamigo.dev/docs/).
-I hope that this project helps people learn new topics, either through teaching them or taking lessons!
+codeamigo.dev provides you with a platform to create Codecademy style lessons. Each lesson is made up of Steps, and each Step is made up of Checkpoints. A Step can have many or no Checkpoints, but must have instructions. Each Checkpoint points to a test you must write that a user must pass. You can read more about testing [here](https://docs.codeamigo.dev/docs/).
+
+## What's Next
+
+I hope that this project helps people learn new topics, either through teaching them or taking lessons! There's still a ton of work to do and features I want to implement. But if you have any feedback or want to contribute, please email me at [philip@codeamigo.dev](mailto:philip@codeamigo.dev).
