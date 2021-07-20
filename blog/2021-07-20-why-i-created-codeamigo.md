@@ -52,7 +52,7 @@ The frontend is a NextJS app using apollo-client to manage state and tailwindcss
 
 ## How It Works
 
-codeamigo.dev provides you with a platform to create Codecademy style lessons. Each lesson is made up of Steps, and each Step is made up of Checkpoints. A Step can have many or no Checkpoints, but must have instructions. Each Checkpoint points to a test you must write that a user must pass. You can read more about testing [here](https://docs.codeamigo.dev/docs/).
+codeamigo.dev provides you with a platform to create Codecademy style lessons. Each lesson is made up of Steps, and each Step is made up of Checkpoints. A Step can have many or no Checkpoints, but must have instructions. Each Checkpoint points to a test you must write that a user must pass. You can read more about testing [here](https://docs.codeamigo.dev/).
 
 ## What's Next
 
