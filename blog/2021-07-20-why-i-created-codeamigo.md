@@ -32,7 +32,7 @@ After scouring the internet for other solutions I came across [parcel](https://g
 
 ### Attempt 3: repl.it approach
 
-Next up I tried [recreating repl.it's approach](https://cloud.google.com/customers/repl-it). But it thoguht it would be too complex of an endeavor considering I have yet to find product-market-fit.
+Next up I tried [recreating repl.it's approach](https://cloud.google.com/customers/repl-it). But thought it would be too complex of an endeavor considering I have yet to find product-market-fit.
 
 ### Attempt 4: Codesandbox To the Rescue!
 
