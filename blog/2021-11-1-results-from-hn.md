@@ -1,5 +1,5 @@
 ---
-slug: results-from-hn
+slug: results-from-hn-1
 title: Results from HN
 author: Philip London
 author_title: Founder @ codeamigo.dev
