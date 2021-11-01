@@ -35,6 +35,14 @@ Last week (10/28/2021) a post about [Codeamigo](https://codeamigo.dev) was #1 on
 
 [Build Your Own Bitcoin Wallet](https://codeamigo.dev/lessons/start/53) was the most popular lesson and received the most number of views. 
 
+## Devices
+
+| Devices | Visitors | %   |
+|---------|----------|-----|
+| Mobile  | 15k      | 53% |
+| Desktop | 9.3k     | 33% |
+| Laptop  | 3.1k     | 11% |
+| Tablet  | 764      | 3%  |
 ## Vercel (Frontend)
 
 Codeamigo's frontend is a Next.js application hosted on Vercel under the [Pro Plan](https://vercel.com/pricing).
@@ -43,7 +51,7 @@ At peak traffic, response time became very slow, sometimes taking ~10 seconds fo
 
 ![Vercel Response Header](/img/2021-11-1-results-from-hn/vercel-response-headers.png)
 
-According to the [Vercel docs](https://vercel.com/docs/concepts/edge-network/caching#cacheable-responses), in order for responses to be cached the "Response must not contain the no-cache directive in the Cache-Control header."
+According to the [Vercel docs](https://vercel.com/docs/concepts/edge-network/caching#cacheable-responses), in order for responses to be cached the "Response must not contain the no-cache directive in the Cache-Control header." We've changed the Cache-Control header to `cache-control: public, max-age=0, must-revalidate` and are now getting the correct `x-vercel-cache: HIT`.
 
 ## DigitalOcean (Backend Hosting)
 
@@ -52,6 +60,8 @@ Codeamigo's API is hosted on a single DigitalOcean droplet (4 GB Memory / 50 GB 
 Sadly, we had not enabled the [Metrics Agent](https://docs.digitalocean.com/products/monitoring/how-to/install-agent/) when we created the droplet, and it's not enabled by default. So we don't have insight into Memory Usage, Load Average, Disk Usage. However, **CPU Usage**, at the peak, was 50%:
 
 ![CPU Usage](/img/2021-11-1-results-from-hn/cpu-usage-DO.png)
+
+It's too bad we didn't have more in-depth metrics setup on DigitalOcean, we've now enabled Metrics Agent.
 
 ## AWS (Execution Env)
 
@@ -66,9 +76,3 @@ Amazingly, AWS billing stayed very low/consistent with other non-active days:
 ## Social
 
 Before HN, our [Twitter](https://twitter.com/codeamigo_dev) account had 11 followers. Following HN, we now have **30** followers. Our [Discord](https://discord.gg/n64Ann2zRc) channel we had 0 users, now we have **13**. Still quite a lot of work to do on that front!
-
-## Takeaways
-
-We should change the Cache-Control header from our Next.JS app so that it does not include the `no-cache` directive.
-
-It's too bad we didn't have more in-depth metrics setup on DigitalOcean, we've now enabled Metrics Agent.
