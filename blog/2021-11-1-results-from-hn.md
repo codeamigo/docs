@@ -8,7 +8,7 @@ author_image_url: https://avatars.githubusercontent.com/u/5640772?v=4
 tags: [codeamigo, about, education, marketing]
 ---
 
-Last week (10/28/2021) a post about Codeamigo was #1 on Hacker News for about 6 hours. We've always wondered what kind of traffic that would drive to applications. Maybe you have too.
+Last week (10/28/2021) a post about [Codeamigo](https://codeamigo.dev) was #1 on Hacker News for about 6 hours. We've always wondered what kind of traffic that would drive to applications. Maybe you have too.
 
 ## Raw Numbers
 
