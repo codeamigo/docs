@@ -18,6 +18,8 @@ Last week (10/28/2021) a post about Codeamigo was #1 on Hacker News for about 6 
 - **37 secs** Avg. duration on site
 - **69%** Bounce rate
 
+![Plausible](/img/2021-11-1-results-from-hn/plausible.png)
+
 > Note: Before 10/28 Codeamigo was averaging about 40 visitors a day, a 25% bounce rate, and a vistor duration of 98 secs.
 
 ## Product Numbers
